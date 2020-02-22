@@ -93,9 +93,8 @@ def createTree(dataset, labels):
 
 if __name__ == "__main__":
 	dataset = np.array(loadDataset())
+	labels = dataset[0,:-1]
 	dataset = np.delete(dataset, (0), axis=0)
-	labels = dataset[:,-1]
-	dataset = np.delete(dataset,(4), axis=1)
 	tree = createTree(dataset.tolist(), labels.tolist())
 	print(tree)
 

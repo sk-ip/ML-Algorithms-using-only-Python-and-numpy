@@ -1,8 +1,8 @@
 import math
-import pandas as pd
 import csv
 import operator
 import numpy as np
+
 
 def loadDataset():
 	with open("baseball.csv", newline="\n") as f:

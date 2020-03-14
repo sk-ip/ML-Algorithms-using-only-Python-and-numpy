@@ -35,7 +35,7 @@ def createClusters(k, means, dataset):
 def kmeans(k, dataset):
     if isinstance(k, float):
         print("k should be integer value")
-    return None
+        return None
 
     new_means = random.sample(range(1, 10), k)
     prev_means = random.sample(range(2, 20), k)
